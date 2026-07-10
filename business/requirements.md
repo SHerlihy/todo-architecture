@@ -4,7 +4,7 @@
 
 **Project Name:** Simple Task Tracker  
 **Document Owner:** Product Owner  
-**Version:** 1.0  
+**Version:** 3.0  
 **Date:** 2026-07-09
 
 ### 1.1 Purpose
@@ -13,10 +13,17 @@ This document defines the business requirements for a simple task tracking appli
 ### 1.2 Business Objective
 The application will reduce missed work and improve personal or team organization by providing a lightweight way to manage task lists and track progress.
 
+Missed work is not currently quantified, so the project will establish a baseline after launch and measure improvement from that baseline rather than against a predeclared missed-work percentage.
+
+The application supports regular daily use during business hours in a single local timezone, with no requirement for continuous 24-hour global operation in the first release.
+
+Usage is expected to be highest at the start and end of the working day, with no known seasonal spike requirement for the initial release.
+
 ### 1.3 Success Criteria
 - Users can create and manage tasks without training.
 - Users can see their open and completed tasks at a glance.
 - The core workflow works reliably on desktop and mobile browsers.
+- The system supports internal and customer-facing users as needed.
 
 ## 2. Scope
 
@@ -26,6 +33,7 @@ The application will reduce missed work and improve personal or team organizatio
 - Set simple due dates and priorities
 - Filter tasks by status
 - Basic user authentication
+- Support for users of the task tracker, whether internal or customer-facing
 
 ### 2.2 Out of Scope
 - Advanced project management features
@@ -41,6 +49,9 @@ The application will reduce missed work and improve personal or team organizatio
 - **End Users:** Create and manage tasks
 - **Development Team:** Implements and tests the solution
 - **Support Team:** Handles user issues after release
+
+### 3.1 User Definition
+For this project, a user is any end user of the task tracker. The initial requirements do not restrict usage to internal-only or customer-only audiences.
 
 ## 4. User Needs
 
@@ -75,35 +86,44 @@ Each task shall support:
 - Due date
 - Priority
 - Status
+- Plain text task details only; rich media is not supported
 
 ### 5.4 Authentication
 The system shall allow users to:
 - Sign in securely
 - Access only their own task data
+- Use a standard secure sign-in flow
 
 ## 6. Non-Functional Requirements
 
 ### 6.1 Usability
 - The main task list should be understandable without onboarding.
 - Common actions should be available within one or two clicks.
+- "At a glance" means the user can understand task status immediately on opening the main task view.
 
 ### 6.2 Performance
 - The application should load the main task view quickly under normal usage.
-- Task updates should appear immediately after save.
+- "Quickly" is defined as a responsive experience rather than a fixed sub-100ms or sub-10ms threshold.
+- Task updates should appear immediately after save, using optimistic UI behavior where appropriate.
 
 ### 6.3 Reliability
 - User data should not be lost during normal operation.
 - Failed saves should return a clear error message.
+- The BRD does not define a numeric failed-save tolerance; the requirement is that failures are visible and do not silently lose data.
 
 ### 6.4 Security
 - User authentication must protect task data from unauthorized access.
 - Sensitive data should be stored and transmitted securely.
+- At minimum, data in transit must use HTTPS/TLS and data at rest must be protected.
+- Task data is not treated as medical data or sensitive PII by default.
 
 ## 7. Assumptions
 
 - Users have access to a modern web browser.
 - The initial release supports individual task tracking only.
 - Users do not require advanced permissions or shared workspaces.
+- The primary usage window is standard business hours, roughly 9am to 5pm in one local timezone.
+- Demand is expected to be relatively steady within those hours, with light spikes when users start and finish their day.
 
 ## 8. Constraints
 
