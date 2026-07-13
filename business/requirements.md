@@ -19,6 +19,8 @@ The application supports regular daily use during business hours in a single loc
 
 Usage is expected to be highest at the start and end of the working day, with no known seasonal spike requirement for the initial release.
 
+The initial release is intended for use in the United Kingdom.
+
 ### 1.3 Success Criteria
 - Users can create and manage tasks without training.
 - Users can see their open and completed tasks at a glance.
@@ -122,6 +124,7 @@ The system shall allow users to:
 - Users have access to a modern web browser.
 - The initial release supports individual task tracking only.
 - Users do not require advanced permissions or shared workspaces.
+- The initial release is intended for use in the country or countries listed in Section 1.2.
 - The primary usage window is standard business hours, roughly 9am to 5pm in one local timezone.
 - Demand is expected to be relatively steady within those hours, with light spikes when users start and finish their day.
 
