@@ -19,7 +19,7 @@ The application supports regular daily use during business hours in a single loc
 
 Usage is expected to be highest at the start and end of the working day, with no known seasonal spike requirement for the initial release.
 
-The initial release is intended for use in the United Kingdom.
+The initial release is intended for use in the United Kingdom, with the majority of users based in London and Manchester.
 
 ### 1.3 Success Criteria
 - Users can create and manage tasks without training.
