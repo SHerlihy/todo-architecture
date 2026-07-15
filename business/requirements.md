@@ -131,6 +131,7 @@ The system shall allow users to:
 ## 8. Constraints
 
 - The project should remain simple and low maintenance.
+- The product is expected to be fully maintained for at least 3 years after launch.
 - The first release should prioritize core task management over extra features.
 - The design should work well on both desktop and mobile screens.
 
