@@ -132,6 +132,7 @@ The system shall allow users to:
 
 - The project should remain simple and low maintenance.
 - The product is expected to be fully maintained for at least 3 years after launch.
+- Two full-time engineers will be available for maintenance over the 3-year support period.
 - The first release should prioritize core task management over extra features.
 - The design should work well on both desktop and mobile screens.
 
