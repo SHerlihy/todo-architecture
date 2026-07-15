@@ -17,8 +17,13 @@ Use SaaS offerings where possible.
 
 ## Considerations
 
+For what period of time will the software project be viable?
+
+How many developers/developer hours will be assigned to maintain the product?
+
 ## Consequences
 ### Positive (Pros)
 
 ### Negative (Cons)
+
 
