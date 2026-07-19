@@ -1,0 +1,26 @@
+# ADR 0007: Threat Landscape
+
+## Status
+Proposed | ~~Accepted~~ | ~~Superseded~~
+
+## Context
+
+Users are only allowed to access their own data.
+Data stored is taks data and well defined.
+Read speed is a critical factor.
+
+## Decision
+
+
+## Considerations
+
+Users are able to input any string data.
+Data has to be subject to end to end encryption.
+Data has to be subject to encryption at rest.
+
+Treating user data supplied as requiring high security due to PII and business secrets.
+
+## Consequences
+### Positive (Pros)
+
+### Negative (Cons)
